@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from blueking.component.shortcuts import get_client_by_user
 
 from pipeline.conf import settings
@@ -38,8 +43,6 @@ class TestCustomService(Service):
             return True
         else:
             return False
-
-        # 处理结果
 
     def outputs_format(self):
         return [
