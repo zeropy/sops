@@ -47,5 +47,5 @@ class TestCustomService(Service):
 class TestCustomComponent(Component):
     name = u"磁盘容量查询"
     code = 'test_custom'
-    bound_service = DiskCapacityService
+    bound_service = TestCustomService
     form = settings.STATIC_URL + 'custom_atoms/test/test_custom.js'
