@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 from blueking.component.shortcuts import get_client_by_user
 
 from pipeline.conf import settings
@@ -12,10 +7,10 @@ from pipeline.component_framework.component import Component
 
 from conf.default import APP_ID
 
-# from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
-__group_name__ = u"测试原子(TEST)"
-# __group_name__ = _(u"测试原子(TEST)")
+# __group_name__ = u"测试原子(TEST)"
+__group_name__ = _(u"测试原子(TEST)")
 
 
 class TestCustomService(Service):
@@ -51,8 +46,8 @@ class TestCustomService(Service):
 
 
 class TestCustomComponent(Component):
-    name = u"磁盘容量查询"
-    # name = _(u"磁盘容量查询")
+    # name = u"磁盘容量查询"
+    name = _(u"磁盘容量查询")
     code = 'test_custom'
     bound_service = TestCustomService
     form = settings.STATIC_URL + 'custom_atoms/test/test_custom.js'
