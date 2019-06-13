@@ -48,4 +48,4 @@ class DiskCapacityComponent(Component):
     name = u"磁盘容量查询"
     code = 'eb_diskcapacity'
     bound_service = DiskCapacityService
-    form = settings.STATIC_URL + 'custom_atoms/test/dc.js'
+    form = settings.STATIC_URL + 'custom_atoms/test/test_custom.js'
