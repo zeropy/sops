@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from blueapps.utils.esbclient import get_client_by_user
+from blueking.component.shortcuts import get_client_by_user
 
 from pipeline.conf import settings
 from pipeline.core.flow.activity import Service
