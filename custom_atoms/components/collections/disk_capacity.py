@@ -48,9 +48,6 @@ class DiskCapacityService(Service):
 
         # 处理结果
 
-    def schedule(self):
-        pass
-
     def outputs_format(self):
         return []
 
