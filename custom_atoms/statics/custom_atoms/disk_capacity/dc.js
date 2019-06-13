@@ -1,5 +1,5 @@
 $(function() {
-    $atoms.disk_capacity = [
+    $atoms.eb_disk_capacity = [
         {
             tag_code: "eb_ip_input",
             type: "input",
