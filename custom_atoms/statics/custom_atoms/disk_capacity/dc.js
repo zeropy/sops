@@ -1,7 +1,7 @@
 $(function() {
     $atoms.disk_capacity = [
         {
-            tag_code: "ip_input",
+            tag_code: "eb_ip_input",
             type: "input",
             attrs: {
                 name: "IP",
@@ -15,7 +15,7 @@ $(function() {
             } 
         },
         {
-            tag_code: "system_radio",
+            tag_code: "eb_system_radio",
             type: "radio",
             attrs: {
                 name: "系统",
@@ -32,7 +32,7 @@ $(function() {
             }
         },
         {
-            tag_code: "path_input",
+            tag_code: "eb_path_input",
             type: "input",
             attrs: [
                 name: "路径",

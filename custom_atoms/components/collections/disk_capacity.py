@@ -8,7 +8,7 @@ import base64
 
 from conf.default import APP_ID
 
-__group_name__ = u"早鸟原子(earlybird)"
+__group_name__ = u"早鸟原子(EB)"
 
 
 class DiskCapacityService(Service):
@@ -17,9 +17,9 @@ class DiskCapacityService(Service):
         biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
         client = get_client_by_user(executor)
 
-        ip_input = data.get_one_of_inputs('ip')
-        system_radio = data.get_one_of_inputs('system')
-        path_input = data.get_one_of_inputs('path')
+        ip_input = data.get_one_of_inputs('eb_ip_input')
+        system_radio = data.get_one_of_inputs('eb_system_radio')
+        path_input = data.get_one_of_inputs('eb_path_input')
 
         api_kwargs = {
             'bk_app_code': APP_ID,
@@ -47,6 +47,6 @@ class DiskCapacityService(Service):
 
 class DiskCapacityComponent(Component):
     name = u"磁盘容量查询"
-    code = 'diskcapacity'
+    code = 'eb_diskcapacity'
     bound_service = DiskCapacityService
     form = settings.STATIC_URL + 'custom_atom/disk_capacity/dc.js'
