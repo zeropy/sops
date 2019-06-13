@@ -1,5 +1,5 @@
-$(function() {
-    $.atoms.eb_diskcapacity = [
+(function() {
+    $.atoms.test_custom = [
         {
             tag_code: "eb_ip_input",
             type: "input",

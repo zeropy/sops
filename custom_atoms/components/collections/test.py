@@ -7,10 +7,10 @@ from pipeline.component_framework.component import Component
 
 from conf.default import APP_ID
 
-__group_name__ = u"早鸟原子(EB)"
+__group_name__ = u"测试原子(TEST)"
 
 
-class DiskCapacityService(Service):
+class TestCustomService(Service):
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
         biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
@@ -44,8 +44,8 @@ class DiskCapacityService(Service):
         ]
 
 
-class DiskCapacityComponent(Component):
+class TestCustomComponent(Component):
     name = u"磁盘容量查询"
-    code = 'eb_diskcapacity'
+    code = 'test_custom'
     bound_service = DiskCapacityService
     form = settings.STATIC_URL + 'custom_atoms/test/test_custom.js'
