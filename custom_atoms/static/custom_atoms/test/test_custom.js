@@ -26,9 +26,11 @@
                 ],
                 default: "1",
                 hookable: true,
-                validation: {
-                    type: "required"
-                }
+                validation: [
+                    {
+                        type: "required"
+                    }
+                ]
             }
         },
         {
@@ -38,9 +40,11 @@
                 name: "路径",
                 placeholder: "文件系统路径",
                 hookable: true,
-                validation: {
-                    type: "required"
-                }
+                validation: [
+                    {
+                        type: "required"
+                    }
+                ]
             ]
         },
     ]
