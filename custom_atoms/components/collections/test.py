@@ -21,7 +21,8 @@ class TestCustomService(Service):
         bk_token = parent_data.get_one_of_inputs('bk_token')
         client = get_client_by_user(executor)
 
-        print(bk_token)
+        print('DEBUG:', parent_data)
+        print('DEBUG:', dir(parent_data))
 
         ip_input = data.get_one_of_inputs('eb_ip_input')
         system_radio = data.get_one_of_inputs('eb_system_radio')
