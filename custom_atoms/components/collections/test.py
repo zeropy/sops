@@ -18,7 +18,10 @@ class TestCustomService(Service):
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
         biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
+        bk_token = parent_data.get_one_of_inputs('bk_token')
         client = get_client_by_user(executor)
+
+        print(bk_token)
 
         ip_input = data.get_one_of_inputs('eb_ip_input')
         system_radio = data.get_one_of_inputs('eb_system_radio')
