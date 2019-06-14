@@ -23,6 +23,9 @@ class TestCustomService(Service):
 
         print('DEBUG:', parent_data)
         print('DEBUG:', dir(parent_data))
+        print(parent_data.get_inputs())
+        print(parent_data.inputs)
+
 
         ip_input = data.get_one_of_inputs('eb_ip_input')
         system_radio = data.get_one_of_inputs('eb_system_radio')
