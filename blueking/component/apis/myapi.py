@@ -4,7 +4,7 @@ from ..base import ComponentAPI
 
 
 class CollectionsMyAPI(object):
-    def __init_(self, client):
+    def __init__(self, client):
         self.client = client
 
         self.get_dfinfo = ComponentAPI(
