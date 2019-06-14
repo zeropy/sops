@@ -26,22 +26,26 @@
                 ],
                 default: "1",
                 hookable: true,
-                validation: {
-                    type: "required"
-                }
+                validation: [
+                    {
+                        type: "required"
+                    }
+                ]
             }
         },
         {
             tag_code: "eb_path_input",
             type: "input",
-            attrs: [
+            attrs: {
                 name: "路径",
                 placeholder: "文件系统路径",
                 hookable: true,
-                validation: {
-                    type: "required"
-                }
-            ]
+                validation: [
+                    {
+                        type: "required"
+                    }
+                ]
+            }
         },
     ]
 })();
