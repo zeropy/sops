@@ -29,7 +29,7 @@ class TestCustomService(Service):
 
         api_kwargs = {
             'bk_app_code': APP_ID,
-            'bk_username': executor,
+            'bk_token': bk_token,
             'ip': ip_input,
             'system': system_radio,
             'path': path_input
