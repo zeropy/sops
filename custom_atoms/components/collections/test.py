@@ -20,6 +20,8 @@ class TestCustomService(Service):
         biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
         client = get_client_by_user(executor)
 
+        print('DEBUG:', executor)
+
         ip_input = data.get_one_of_inputs('eb_ip_input')
         system_radio = data.get_one_of_inputs('eb_system_radio')
         path_input = data.get_one_of_inputs('eb_path_input')
