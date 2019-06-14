@@ -25,8 +25,7 @@ class TestCustomService(Service):
         path_input = data.get_one_of_inputs('eb_path_input')
 
         api_kwargs = {
-            # 'bk_app_code': APP_ID,
-            'bk_app_code': 'mydc',
+            'bk_app_code': APP_ID,
             'bk_username': executor,
             'ip': ip_input,
             'system': system_radio,
