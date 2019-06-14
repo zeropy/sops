@@ -36,7 +36,7 @@
         {
             tag_code: "eb_path_input",
             type: "input",
-            attrs: [
+            attrs: {
                 name: "路径",
                 placeholder: "文件系统路径",
                 hookable: true,
@@ -45,7 +45,7 @@
                         type: "required"
                     }
                 ]
-            ]
+            }
         },
     ]
 })();
