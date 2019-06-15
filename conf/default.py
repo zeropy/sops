@@ -123,7 +123,7 @@ LOCALEURL_USE_ACCEPT_LANGUAGE = True
 _ = lambda s: s
 LANGUAGES = (
     ('zh-cn', _(u'简体中文')),
-    ('en', _(u'English')),
+    # ('en', _(u'English')),
 )
 USE_I18N = True
 USE_L10N = True
