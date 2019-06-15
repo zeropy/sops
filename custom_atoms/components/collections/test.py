@@ -39,7 +39,7 @@ class TestCustomService(Service):
 
     def outputs_format(self):
         return [
-            self.OutpputItem(name="磁盘使用率".encode('utf-8').decode('utf-8'), key='data', type='int')
+            self.OutpputItem(name=_(u"磁盘使用率").__str__(), key='data', type='int')
             # self.OutputItem(name='disk_usaged', key='data', type='int')
         ]
 
