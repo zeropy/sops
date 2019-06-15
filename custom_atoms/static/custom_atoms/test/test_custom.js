@@ -6,13 +6,14 @@
             attrs: {
                 name: "IP",
                 placeholder: "请输入IP地址",
+                default: '10.0.1.80',
                 hookable: true,
                 validation: [
                     {
                         type: "required"
                     }
                 ]
-            } 
+            }
         },
         {
             tag_code: "eb_system_radio",
@@ -39,6 +40,7 @@
             attrs: {
                 name: "路径",
                 placeholder: "文件系统路径",
+                default: '/',
                 hookable: true,
                 validation: [
                     {
