@@ -33,7 +33,7 @@ class TestCustomService(Service):
         if resp['result']:
             disk_usaged = resp['data'][-1]['usaged']
             disk_usaged = resp['message']
-            data.set_outputs('data', disk_usaged)
+            data.set_outputs('usaged', disk_usaged)
             return True
         else:
             data.set_outputs('ex_data', resp['message'])
@@ -41,10 +41,10 @@ class TestCustomService(Service):
 
     def outputs_format(self):
         return [
-            self.OutputItem(name=_(u"磁盘使用率"), key='data', type='int'),
+            self.OutputItem(name=_(u"磁盘使用率"), key='usaged', type='int'),
             # self.OutputItem(name='disk_usaged', key='data', type='int'),
             self.OutputItem(name=_(u"返回信息"), key='message', type='str'),
-            self.OutputItem(name=_(u"异常信息"), key='ex_data', type='str'),
+            self.OutputItem(name=_(u"异常信息"), key='ex_message', type='str'),
         ]
 
 
