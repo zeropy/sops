@@ -49,7 +49,7 @@ class TestCustomService(Service):
 
 
 class TestCustomComponent(Component):
-    name = u"磁盘容量查询"
+    name = _(u"磁盘容量查询")
     # name = _(u"diskcapacityquery")
     code = 'test_custom'
     bound_service = TestCustomService
