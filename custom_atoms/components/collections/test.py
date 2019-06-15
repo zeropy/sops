@@ -10,8 +10,6 @@ from conf.default import APP_ID
 from django.utils.translation import ugettext_lazy as _
 
 __group_name__ = u"测试原子(TEST)"
-# __group_name__ = _(u"测试原子(TEST)")
-# __group_name__ = "testatom(TEST)"
 
 
 class TestCustomService(Service):
@@ -41,8 +39,8 @@ class TestCustomService(Service):
 
     def outputs_format(self):
         return [
-            # self.OutpputItem(name=_(u"磁盘使用率"), key='data', type='int')
-            self.OutputItem(name='disk_usaged', key='data', type='int')
+            self.OutpputItem(name=u"磁盘使用率", key='data', type='int')
+            # self.OutputItem(name='disk_usaged', key='data', type='int')
         ]
 
 
