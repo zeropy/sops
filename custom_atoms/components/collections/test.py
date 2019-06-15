@@ -9,7 +9,7 @@ from pipeline.component_framework.component import Component
 
 from conf.default import APP_ID
 
-__group_name__ = u"测试原子(TEST)"
+__group_name__ = _(u"测试原子(TEST)")
 
 
 class TestCustomService(Service):
@@ -43,8 +43,8 @@ class TestCustomService(Service):
         return [
             self.OutputItem(name=_(u"磁盘使用率"), key='data', type='int'),
             # self.OutputItem(name='disk_usaged', key='data', type='int'),
-            self.OutputItem(name=u"返回信息", key='message', type='str'),
-            self.OutputItem(name=u"异常信息", key='ex_data', type='str'),
+            self.OutputItem(name=_(u"返回信息"), key='message', type='str'),
+            self.OutputItem(name=_(u"异常信息"), key='ex_data', type='str'),
         ]
 
 
