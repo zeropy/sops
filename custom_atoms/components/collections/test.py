@@ -39,14 +39,14 @@ class TestCustomService(Service):
 
     def outputs_format(self):
         return [
-            self.OutpputItem(name=_(u"磁盘使用率").encode('utf-8'), key='data', type='int')
-            # self.OutputItem(name='disk_usaged', key='data', type='int')
+            # self.OutpputItem(name=_(u"磁盘使用率").encode('utf-8'), key='data', type='int')
+            self.OutputItem(name='disk_usaged', key='data', type='int')
         ]
 
 
 class TestCustomComponent(Component):
-    # name = u"磁盘容量查询"
-    name = _(u"diskcapacityquery")
+    name = u"磁盘容量查询"
+    # name = _(u"diskcapacityquery")
     code = 'test_custom'
     bound_service = TestCustomService
     form = settings.STATIC_URL + 'custom_atoms/test/test_custom.js'
