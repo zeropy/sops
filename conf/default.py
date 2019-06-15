@@ -122,8 +122,8 @@ LOCALEURL_USE_ACCEPT_LANGUAGE = True
 # 界面可选语言
 _ = lambda s: s
 LANGUAGES = (
-    # ('en', _(u'English')),
     ('zh-cn', _(u'简体中文')),
+    ('en', _(u'English')),
 )
 USE_I18N = True
 USE_L10N = True
