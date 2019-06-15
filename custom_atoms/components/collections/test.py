@@ -9,23 +9,16 @@ from conf.default import APP_ID
 
 from django.utils.translation import ugettext_lazy as _
 
-# __group_name__ = u"测试原子(TEST)"
+__group_name__ = u"测试原子(TEST)"
 # __group_name__ = _(u"测试原子(TEST)")
-__group_name__ = "testatom(TEST)"
+# __group_name__ = "testatom(TEST)"
 
 
 class TestCustomService(Service):
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
-        biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
-        bk_token = parent_data.get_one_of_inputs('bk_token')
+        # biz_cc_id = parent_data.get_one_of_inputs('biz_cc_id')
         client = get_client_by_user(executor)
-
-        print('DEBUG:', parent_data)
-        print('DEBUG:', dir(parent_data))
-        print(parent_data.get_inputs())
-        print(parent_data.inputs)
-
 
         ip_input = data.get_one_of_inputs('eb_ip_input')
         system_radio = data.get_one_of_inputs('eb_system_radio')
@@ -33,7 +26,6 @@ class TestCustomService(Service):
 
         api_kwargs = {
             'bk_app_code': APP_ID,
-            'bk_token': bk_token,
             'ip': ip_input,
             'system': system_radio,
             'path': path_input
