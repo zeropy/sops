@@ -19,7 +19,7 @@
             tag_code: "eb_system_radio",
             type: "radio",
             attrs: {
-                name: "系统",
+                name: gettext("系统"),
                 items: [
                     {value: "1", name: "Linux"},
                     {value: "2", name: "Windows"},
