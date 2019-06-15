@@ -41,7 +41,7 @@ class TestCustomService(Service):
 
     def outputs_format(self):
         return [
-            self.OutputItem(name=u"磁盘使用率", key='data', type='int'),
+            self.OutputItem(name=_(u"磁盘使用率"), key='data', type='int'),
             # self.OutputItem(name='disk_usaged', key='data', type='int'),
             self.OutputItem(name=u"返回信息", key='message', type='str'),
             self.OutputItem(name=u"异常信息", key='ex_data', type='str'),
