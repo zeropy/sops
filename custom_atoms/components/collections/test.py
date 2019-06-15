@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from django.utils.translation import ugettext_lazy as _
+
 from blueking.component.shortcuts import get_client_by_user
 
 from pipeline.conf import settings
@@ -6,8 +8,6 @@ from pipeline.core.flow.activity import Service
 from pipeline.component_framework.component import Component
 
 from conf.default import APP_ID
-
-from django.utils.translation import ugettext_lazy as _
 
 __group_name__ = u"测试原子(TEST)"
 
