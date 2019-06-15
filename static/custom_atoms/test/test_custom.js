@@ -38,7 +38,7 @@
             tag_code: "eb_path_input",
             type: "input",
             attrs: {
-                name: "路径",
+                name: gettext("路径"),
                 placeholder: "文件系统路径",
                 default: '/',
                 hookable: true,
