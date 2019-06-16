@@ -32,8 +32,9 @@ class TestCustomService(Service):
 
         if resp['result']:
             disk_usaged = resp['data'][-1]['usaged']
-            disk_usaged = resp['message']
+            message = resp['message']
             data.set_outputs('usaged', disk_usaged)
+            data.set_outputs('message', message)
             return True
         else:
             data.set_outputs('ex_data', resp['message'])
