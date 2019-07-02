@@ -31,7 +31,7 @@ class TestCustomService(Service):
         resp = client.myapi.get_dfinfo(**api_kwargs)
 
         if resp['result']:
-            if len(resp['data']) == 1:
+            if len(resp['data']) > 1:
                 disk_usaged = resp['data'][-1]['usaged']
                 message = resp['message']
             else:
